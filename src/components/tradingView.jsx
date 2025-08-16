@@ -37,9 +37,8 @@ function TradingViewWidget() {
   }, []);
 
   return (
-    <div className="tradingview-widget-container" ref={container} style={{ height: "100%", width: "100%" }}>
-      <div className="tradingview-widget-container__widget" style={{ height: "100%", width: "100%" }}></div>
-      <div className="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA:XAUUSD/" rel="noopener nofollow" target="_blank"><span className="blue-text">XAUUSD quotes by TradingView</span></a></div>
+    <div className="tradingview-widget-container" ref={container} style={{ height: "100%", width: "100%", border: "none", margin: 0, padding: 0 }}>
+      <div className="tradingview-widget-container__widget" style={{ height: "100%", width: "100%", border: "none", margin: 0, padding: 0 }}></div>
     </div>
   );
 }
